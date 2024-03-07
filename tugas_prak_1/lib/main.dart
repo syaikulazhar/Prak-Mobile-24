@@ -9,7 +9,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Membuat halaman untuk login
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -20,15 +19,11 @@ class LoginScreen extends StatelessWidget {
         ),
       ),
       body: Center(
-        // Menampilkan widget dalam satu kolom dan di tengah layar
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Menampilkan gambar
             Container(
               padding: EdgeInsets.all(15),
-              // Hapus gambar
-              // child: Image.asset('asset/images/img.png', height: 80, width: 80),
             ),
             // Menampilkan input untuk email
             Container(
@@ -61,14 +56,6 @@ class LoginScreen extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(20, 25, 20, 0),
               child: ElevatedButton(
                 onPressed: () {
-                  // Tambahkan logika autentikasi di sini
-                  // Contoh:
-                  // if (authenticated) {
-                  //   Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(builder: (context) => MainMenuScreen()),
-                  //   );
-                  // }
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue, // Ganti warna latar belakang tombol menjadi biru
@@ -96,11 +83,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Membuat dan menampilkan aplikasi Flutter
     return MaterialApp(
-      // Mengatur tema keseluruhan aplikasi
       theme: ThemeData(scaffoldBackgroundColor: const Color(0xFFA3A3B0)),
-      // Halaman pertama yang akan ditampilkan saat aplikasi dijalankan
       home: LoginScreen(),
     );
   }
